@@ -1,0 +1,7 @@
+{
+  "name": "Tarabaho",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
