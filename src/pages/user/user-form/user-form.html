@@ -1,0 +1,65 @@
+<!--
+  Generated template for the UserFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <ion-slides pager>
+
+    <ion-slide>
+      <h2>Welcome to Tarabaho!</h2>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>What is tarabaho?</h2>
+      <p>
+        Tarabaho is a job posting mobile application where you can post your jobs for others to see and to see the list
+        of all the available jobs that have been posted.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>Set up your account!</h2>
+      <ion-list>
+
+        <ion-item>
+          <ion-label stacked>First Name</ion-label>
+          <ion-input type="text" [(ngModel)]="userFirstName" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Middle Name</ion-label>
+          <ion-input type="text" [(ngModel)]="userMidName" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Last Name</ion-label>
+          <ion-input type="text" [(ngModel)]="userLastName" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Sex</ion-label>
+          <ion-select [(ngModel)]="userSex">
+            <ion-option value="Male">Male</ion-option>
+            <ion-option value="Female">Female</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="userEmail" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Complete Address</ion-label>
+          <ion-input type="text" [(ngModel)]="userAddress" required></ion-input>
+        </ion-item>
+
+      </ion-list>
+      <button ion-button outline medium block (click)="userAccCreate()">UPDATE</button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

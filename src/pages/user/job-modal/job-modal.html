@@ -1,0 +1,34 @@
+<!--
+  Generated template for the JobModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding style="background-color: rgba(0, 0, 0, .2);" (click)="dismissModal()">
+  <ion-card style="margin-top: 30%;">
+    <ion-card-content>
+      <ion-row>
+        <ion-col col-4>
+          <ion-img src="./../../../assets/imgs/ustp.png" style="background: transparent !important; height: 100%; width:100%; min-height: 82px;"></ion-img>
+        </ion-col>
+        <ion-col col-8>
+          <h1 [(ngModel)]="company_name" ngDefaultControl>{{company_name}}</h1>
+          <p [(ngModel)]="company_desc" ngDefaultControl>{{company_desc}}</p>
+        </ion-col>
+      </ion-row>
+      <p [(ngModel)]="company_hr" ngDefaultControl><strong>HR: </strong>{{company_hr}}</p>
+      <p [(ngModel)]="company_contact_no" ngDefaultControl><strong>Contact Number: </strong>{{company_contact_no}}</p>
+      <p [(ngModel)]="company_email" ngDefaultControl><strong>Email: </strong>{{company_email}}</p>
+      <p [(ngModel)]="company_address" ngDefaultControl><strong>Location: </strong>{{company_address}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <h1 [(ngModel)]="job_position" ngDefaultControl>{{job_position}}</h1>
+      <p [(ngModel)]="job_desc" ngDefaultControl><strong>Description: </strong>{{job_desc}}</p>
+      <p [(ngModel)]="job_sex" ngDefaultControl><strong>Sex: </strong>{{job_sex}}</p>
+      <p [(ngModel)]="job_requirements" ngDefaultControl><strong>Requirements: </strong>{{job_requirements}}</p>
+      <p [(ngModel)]="date_posted" ngDefaultControl><strong>Date Posted: </strong>{{date_posted}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
